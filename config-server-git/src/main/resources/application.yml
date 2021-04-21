@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/CourageToDo/config-server-demo/
+          username: 15189835655@163.com
+          password: xmd19930202
+server:
+  port: 8091
