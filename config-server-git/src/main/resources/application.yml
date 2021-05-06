@@ -7,6 +7,6 @@ spring:
         git:
           uri: https://github.com/CourageToDo/config-server-demo/
           username: 15189835655@163.com
-          password: xmd19930202
+          password: 123
 server:
   port: 8091
