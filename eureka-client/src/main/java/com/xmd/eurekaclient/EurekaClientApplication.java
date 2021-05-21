@@ -6,6 +6,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.Environment;
 
 import java.net.InetAddress;
@@ -13,6 +14,7 @@ import java.net.UnknownHostException;
 
 @EnableDiscoveryClient
 @SpringBootApplication
+//@ComponentScan(basePackages = {"com.xmd.eurekaclient.config"})
 public class EurekaClientApplication {
 
     private static Logger logger = LoggerFactory.getLogger(EurekaClientApplication.class);
