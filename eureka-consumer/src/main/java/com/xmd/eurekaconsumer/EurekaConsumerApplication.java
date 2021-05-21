@@ -24,7 +24,6 @@ public class EurekaConsumerApplication {
     }
     public static void main(String[] args) {
 
-//        SpringApplication.run(EurekaConsumerApplication.class, args);
         SpringApplication app = new SpringApplication(EurekaConsumerApplication.class);
         Environment env = app.run(args).getEnvironment();
         String protocol = "http";

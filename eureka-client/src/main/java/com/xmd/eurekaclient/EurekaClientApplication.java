@@ -18,10 +18,6 @@ public class EurekaClientApplication {
     private static Logger logger = LoggerFactory.getLogger(EurekaClientApplication.class);
     public static void main(String[] args) {
 
-//        SpringApplication.run(EurekaClientApplication.class, args);
-        new SpringApplicationBuilder(
-                EurekaClientApplication.class)
-                .web(true).run(args);
         SpringApplication app = new SpringApplication(EurekaClientApplication.class);
         Environment env = app.run(args).getEnvironment();
         String protocol = "http";
@@ -42,7 +38,6 @@ public class EurekaClientApplication {
         } catch (UnknownHostException e) {
             e.printStackTrace();
         }
-        SpringApplication.run(EurekaClientApplication.class, args);
     }
 
 }

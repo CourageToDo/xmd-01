@@ -19,9 +19,6 @@ public class EurekaServerApplication {
 
     public static void main(String[] args) {
 
-        //        new SpringApplicationBuilder(SpringcloudApplication.class)
-//                .web(true).run(args);
-//        SpringApplication.run(SpringcloudApplication.class, args);
         SpringApplication app = new SpringApplication(EurekaServerApplication.class);
         Environment env = app.run(args).getEnvironment();
         String protocol = "http";

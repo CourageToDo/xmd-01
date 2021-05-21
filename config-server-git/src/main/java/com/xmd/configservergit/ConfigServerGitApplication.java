@@ -19,8 +19,6 @@ public class ConfigServerGitApplication {
 
     public static void main(String[] args) {
 
-//        SpringApplication.run(ConfigServerGitApplication.class, args);
-        new SpringApplicationBuilder(ConfigServerGitApplication.class).web(true).run(args);
         SpringApplication app = new SpringApplication(ConfigServerGitApplication.class);
         Environment env = app.run(args).getEnvironment();
         String protocol = "http";

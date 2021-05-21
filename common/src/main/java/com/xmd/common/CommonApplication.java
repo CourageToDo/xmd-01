@@ -15,7 +15,6 @@ public class CommonApplication {
 	private static Logger logger = LoggerFactory.getLogger(CommonApplication.class);
 
 	public static void main(String[] args) {
-//		SpringApplication.run(CommonApplication.class, args);
 
 		SpringApplication app = new SpringApplication(CommonApplication.class);
 		Environment env = app.run(args).getEnvironment();
